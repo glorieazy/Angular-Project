@@ -1,0 +1,18 @@
+<!-- src/app/user-profile/user-profile.component.html -->
+<button (click)="toggleProfile()">Toggle Profile</button>
+<div [hidden]="!isProfileVisible">
+    <h2>User Profile</h2>
+    <p>First Name: {{ currentUser.firstName }}</p>
+    <p>Last Name: {{ currentUser.lastName }}</p>
+
+    <!-- checkbox to toggle email visibility-->
+    <label>
+        <input type="checkbox" [(ngModel)]="showEmail"> Show Email
+    </label>
+
+    <!-- Conditionally render the email based on the showEmail property-->
+    <div *ngIf="showEmail">
+        <p>Email: {{ currentUser.email }}</p>
+    </div>
+  </div>
+  

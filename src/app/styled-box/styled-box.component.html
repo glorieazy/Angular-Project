@@ -1,0 +1,17 @@
+<div>
+    <h2>Styled Box</h2>
+
+    <!-- Styled div element-->
+    <div [style.background-color]="boxColor" [style.width]="boxSize" [style.height]="boxSize"></div>
+
+    <!-- Input fields for boxColor and boxSize with two-way binding -->
+    <label for="boxColor">Box Color</label>
+    <input type="text" id="boxColor" [(ngModel)]="boxColor">
+
+    <label for="boxSize">Box Size</label>
+    <input type="text" id="boxSize" [(ngModel)]="boxSize">
+
+    <!-- box to reset style-->
+    <button (click)="resetStyles()">Reset</button>
+
+</div>

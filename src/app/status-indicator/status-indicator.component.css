@@ -1,0 +1,21 @@
+.status-box {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+  }
+  
+  .online {
+    background-color: green;
+    color: white;
+  }
+  
+  .offline {
+    background-color: red;
+    color: white;
+  }
+  
+  .busy {
+    background-color: yellow;
+    color: black;
+  }
+  

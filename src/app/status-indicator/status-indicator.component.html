@@ -1,0 +1,15 @@
+<div>
+    <h2>>Status Indicator!</h2>
+
+    <!-- Div to display the current status with class binding-->
+    <div [ngClass]="status" class="status-box">
+        Current Status: {{ status }}
+    </div>
+
+
+    <!-- buttons to change the status-->
+    <button (click)="setStatus('online')">Online</button>
+    <button (click)="setStatus('offline')">Offline</button>
+    <button (click)="setStatus('busy')">Busy</button>
+
+</div>

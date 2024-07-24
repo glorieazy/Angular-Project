@@ -1,0 +1,20 @@
+<!-- src/app/user-dashboard/user-dashboard.component.html -->
+<div>
+    <h2><p>user-update Dashboard !</p></h2>
+
+
+    <!-- interpolation to display the username-->
+    <p>Username: {{ currentUser.username }}</p>
+
+    <!-- 2 way binding for username input-->
+    <label for="username">Update username:</label>
+    <input type="text" id="username" [(ngModel)]="currentUser.username">
+
+    <!-- Button to update email-->
+    <button (click)="updateEmail()">Update Email</button>
+
+    <!-- Display email using property binding, ensuring it's not empty -->
+    <div *ngIf="currentUser.email">
+        <p>Email: {{ currentUser.email }}</p>
+    </div>
+</div>
